@@ -1,0 +1,101 @@
+.navbar_container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0d0d0d;
+  border-bottom: 2px solid whitesmoke;
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  width: 140px;
+  height: 100%;
+  background-image: url(../assets/logoff.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav_links {
+  width: 80%;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_links a {
+  transition: all 0.4s ease-out;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.nav_links a:hover {
+  transform: scale(1.2);
+  color: #0d0d0d;
+  -webkit-text-stroke: 1px whitesmoke;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.link_to_login {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px white solid;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.link_to_login:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black !important;
+}
+.user_info {
+  margin-top: 15px;
+  display: flex;
+  height: 100%;
+  gap: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.userName {
+  margin-left: -50px;
+  margin-right: 5rem;
+  position: relative;
+  font-size: larger;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 10rem;
+  align-items: center;
+}
+.logout_button {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px white solid;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.logout_button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}

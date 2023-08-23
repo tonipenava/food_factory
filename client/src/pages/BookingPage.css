@@ -1,0 +1,64 @@
+.booking_container {
+  display: flex;
+  background-image: url('../assets/book_table.jpg');
+  background-size: cover;
+  background-position: center;
+  image-rendering: optimizeQuality;
+}
+.booking_title {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 2px 2px #222222;
+}
+.booking_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90vh;
+}
+.booking_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.93);
+}
+.booking_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+}
+.booking_form input {
+  width: 100%;
+  background-color: transparent;
+  color-scheme: dark;
+  border: 0px;
+  border-bottom: 2px solid;
+  padding: 10px;
+  font-weight: 700;
+}
+.booking_form input::placeholder {
+  color: white;
+}
+
+.booking_btn {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 700;
+  border: 0px;
+  border: 2px solid white;
+  border-top: 2px solid white;
+}
+.booking_btn:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: #000;
+}
