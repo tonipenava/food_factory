@@ -104,11 +104,13 @@
 }
 @media (max-width: 768px) {
   .navbar_container {
+    z-index: 1;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    padding: 20px 0; /* Adjust spacing as needed */
   }
   .menu_icon {
     display: block;
@@ -122,11 +124,10 @@
     height: 70px;
     z-index: 1;
     left: 27%;
-    /* Add spacing below the logo */
   }
 
   .nav_links {
-    display: none; /* Hide the navigation links by default */
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
@@ -144,9 +145,11 @@
     display: none;
   }
   .logout_button {
-    position: absolute;
-    top: -7%;
+    position: relative;
     right: -20px;
+    top: 13px;
+    background-color: whitesmoke;
+    color: #0d0d0d;
   }
 
   .nav_links.active {
@@ -163,12 +166,12 @@
     display: none;
   }
   .nav_links a {
-    font-size: 1.5rem; /* Increase font size for mobile */
+    font-size: 1.5rem;
     color: whitesmoke;
   }
 
   .menu_icon {
-    font-size: 2rem; /* Size for the hamburger icon */
+    font-size: 2rem;
     cursor: pointer;
     margin-left: 20px;
   }
