@@ -42,15 +42,15 @@
 
 .carousel {
   align-items: center;
-  width: 80vw;
+  width: 100vw;
   height: 90vh;
 }
 .text_on_carousel {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 1200px;
-  top: 200px;
+  right: 53%;
+  top: 80px;
   color: white;
 }
 
@@ -68,4 +68,74 @@
   width: 50vw;
   height: 50vh;
   margin-bottom: 50px;
+}
+@media (max-width: 360px) {
+  .carousel {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+    margin-left: -24px;
+  }
+  .prevButton {
+    width: 80px;
+  }
+  .nextButton {
+    width: 80px;
+    position: absolute;
+    right: -72px;
+  }
+
+  .text_on_carousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 150px;
+    top: 20px;
+    color: white;
+  }
+  .carousel h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 1;
+    font-size: 3rem;
+    text-shadow: 2px 2px #222222;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .carousel h2 {
+    z-index: 1;
+    font-size: 3rem;
+    text-shadow: 2px 2px #222222;
+    text-align: center;
+    transform: rotate(90deg);
+  }
+  .about_text {
+    height: 100%;
+    width: 80%;
+    color: whitesmoke;
+  }
+  .about_text p {
+    margin-top: 40px;
+    display: flex;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 320;
+    line-height: 2rem;
+  }
+  .map_split {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .map_split_text {
+    color: whitesmoke;
+  }
+  .map_split .map {
+    z-index: 2;
+    width: 80vw;
+    height: 40vh;
+    margin-bottom: 50px;
+  }
 }

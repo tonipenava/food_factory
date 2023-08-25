@@ -62,3 +62,17 @@
   background-color: white;
   color: #000;
 }
+@media (max-width: 360px) {
+  .booking_container {
+    display: flex;
+    background-image: url('../assets/book_table.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .booking_title {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 2px #222222;
+    margin-left: 20px;
+  }
+}

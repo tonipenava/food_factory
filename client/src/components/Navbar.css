@@ -99,3 +99,86 @@
   background-color: white;
   color: black;
 }
+.menu_icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0; /* Adjust spacing as needed */
+  }
+  .menu_icon {
+    display: block;
+    position: relative;
+    left: 10px;
+  }
+  .logo {
+    display: block;
+    position: absolute;
+    background-size: cover;
+    height: 70px;
+    z-index: 1;
+    left: 27%;
+    /* Add spacing below the logo */
+  }
+
+  .nav_links {
+    display: none; /* Hide the navigation links by default */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: whitesmoke solid 5px;
+    position: relative;
+    top: 100px;
+    z-index: 2;
+  }
+  .link_to_login {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+  .register {
+    display: none;
+  }
+  .logout_button {
+    position: absolute;
+    top: -7%;
+    right: -20px;
+  }
+
+  .nav_links.active {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: whitesmoke solid 5px;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+  }
+  .nav_links a:active ~ .nav_links {
+    display: none;
+  }
+  .nav_links a {
+    font-size: 1.5rem; /* Increase font size for mobile */
+    color: whitesmoke;
+  }
+
+  .menu_icon {
+    font-size: 2rem; /* Size for the hamburger icon */
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  .user_info {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .userName {
+    display: none;
+  }
+}

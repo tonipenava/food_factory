@@ -37,3 +37,44 @@
   background-color: white;
   color: black;
 }
+@media (max-width: 360px) {
+  .home_page {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../assets/naslovna.jpg');
+    background-size: cover;
+    background-position: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .home_content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+  }
+  .home_text {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-right: 5vw;
+  }
+  .book_table_btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px white solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .book_table_btn:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+  }
+}

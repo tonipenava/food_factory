@@ -197,7 +197,7 @@ const MenuPage = () => {
       <div className="menu_filter_nav">
         <div className="filter_nav_item">
           <div class="dropdown">
-            <button class="dropbtn">Sort by categories :</button>
+            <button class="dropbtn">Sort by categories:</button>
             <div class="dropdown-content">
               <button
                 value="soup"
@@ -251,13 +251,9 @@ const MenuPage = () => {
           </div>
         </div>
         <div className="filter_nav_ad">
-          <button onClick={() => setSorted(sortedAsc)}>
-            Sortiraj uzlazno po cijeni ↑
-          </button>
+          <button onClick={() => setSorted(sortedAsc)}>Cijena ↑</button>
 
-          <button onClick={() => setSorted(sortedDes)}>
-            Sortiraj silazno po cijeni ↓
-          </button>
+          <button onClick={() => setSorted(sortedDes)}>Cijena ↓</button>
         </div>
       </div>
       <div className="menu-container">

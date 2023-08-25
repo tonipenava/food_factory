@@ -23,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .img_carousel {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .prevButton {
@@ -36,5 +36,5 @@
 
 img {
   display: block;
-  width: 100%;
+  width: 100vw;
 }
